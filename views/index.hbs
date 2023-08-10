@@ -2,11 +2,18 @@
 <div class="container search-bar">
   <div class="search-bar-outer">
     <div class="search-bar-inner">
-      <form action="/search">
+      <form action="/restaurants">
         <h4 class="mb-2">尋找餐廳：</h4>
         <div class="input-group">
-          <input type="text" name="keyword" class="form-control" placeholder="輸入餐廳、分類" aria-label="Restaurant Name..."
-            value="" aria-describedby="search-button">
+          <input
+            type="text"
+            name="keyword"
+            class="form-control"
+            placeholder="輸入餐廳、分類"
+            aria-label="Restaurant Name..."
+            value="{{keyword}}"
+            aria-describedby="search-button"
+          >
           <div class="input-group-append">
             <button class="btn btn-major" type="submit" id="search-button"><i class="fas fa-search"></i></button>
           </div>
@@ -18,6 +25,7 @@
 
 <!-- restaurant list -->
 <div class="container mt-5">
+        {{#if isKeywordMatched}}
   <div class="row">
     <div class="col-md-10 col-12 mx-auto">
       <div class="row row-cols-sm-3">
@@ -44,4 +52,7 @@
       </div>
     </div>
   </div>
+        {{else}}
+          <p class="text-center">查無此搜尋結果！</p>
+        {{/if}}
 </div>
