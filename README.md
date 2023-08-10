@@ -41,3 +41,8 @@ express server is running on http://localhost:3000
 ```
 
 5. 點擊 `http://localhost:3000` 開啟網頁，即可使用程式
+
+## Screenshot
+![](https://raw.githubusercontent.com/calon719/restaurant_list/main/public/images/localhost_3000_restaurants.png)
+![](https://raw.githubusercontent.com/calon719/restaurant_list/main/public/images/localhost_3000_restaurants_8.png)
+![](https://raw.githubusercontent.com/calon719/restaurant_list/main/public/images/localhost_3000_restaurants_keyword%3D%25E7%25BE%25A9%25E5%25A4%25A7%25E5%2588%25A9.png)
