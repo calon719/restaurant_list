@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/restaurants', (req, res) => {
-  res.render('index');
+  res.render('index', { restaurants });
 });
 
 app.get('/restaurants/:id', (req, res) => {
